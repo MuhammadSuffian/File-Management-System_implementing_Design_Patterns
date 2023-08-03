@@ -1,11 +1,11 @@
-Project Description
+<h1>File Management System</h1>
 This project is a file management system implemented in Java, showcasing the usage of three design patterns: Composite, Command, and Decorator. The system provides functionality for creating directories and files, executing commands such as copying/moving files, and adding additional features through decorators.
 
-Design Patterns
-1. Composite Pattern
+<h2>Design Patterns</h2>
+<h3>1. Composite Pattern</h3>
 The Composite pattern is utilized to represent directories and files in a hierarchical structure. The Composite class serves as the base class for both directories and files. It provides methods for adding and removing child components, retrieving child components, and listing the components. The Directorycompositive and Filecomposite classes extend the Composite class to represent directories and files, respectively. The DirectoryIterator class implements the Iterator interface to traverse and iterate over the components within the composite structure.
 
-2. Command Pattern
+<h3>2. Command Pattern</h3>
 The Command pattern is employed to encapsulate different operations as commands. The Command interface defines the execute method, which is implemented by various command classes such as CreateFileCommand, CreateDirectoryCommand, CopyFileCommand, and MoveFileCommand. Each command encapsulates a specific operation, such as creating files or directories, copying/moving files. The Main class demonstrates the usage of these commands by executing them and performing corresponding operations on the file management system.
 
 3. Decorator Pattern
